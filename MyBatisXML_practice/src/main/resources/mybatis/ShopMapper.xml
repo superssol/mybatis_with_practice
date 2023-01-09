@@ -6,6 +6,6 @@
 <mapper namespace="com.exercise.mybatis.ShopMapper">
 	<select id="list" resultType="java.util.Map">
 		SELECT SHOP_NO, SHOP_NAME, SHOP_LOCATION, SHOP_STATUS
-		FROM SHOP
+		FROM NEW_MYBATIS
 	</select>
 </mapper>

@@ -16,6 +16,6 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource="resources/mybatis/ShopMapper"/>
+		<mapper resource="mybatis/ShopMapper.xml"/>
 	</mappers>
 </configuration>
