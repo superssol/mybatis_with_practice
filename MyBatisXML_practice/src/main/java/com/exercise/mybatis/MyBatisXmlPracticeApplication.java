@@ -1,4 +1,4 @@
-package com.exercise.mabatis;
+package com.exercise.mybatis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

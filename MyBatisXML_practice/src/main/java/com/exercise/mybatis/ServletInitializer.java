@@ -1,4 +1,4 @@
-package com.exercise.mabatis;
+package com.exercise.mybatis;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

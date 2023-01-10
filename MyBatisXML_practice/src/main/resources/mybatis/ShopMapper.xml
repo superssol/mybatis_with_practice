@@ -3,9 +3,14 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="com.exercise.mybatis.ShopMapper">
+<mapper namespace="shopMapper">
 	<select id="list" resultType="java.util.Map">
 		SELECT SHOP_NO, SHOP_NAME, SHOP_LOCATION, SHOP_STATUS
 		FROM NEW_MYBATIS
 	</select>
+	
+	<insert id="insert" parameterType="shop">
+		INSERT INTO NEW_MYBATIS(SHOP_NO, SHOP_NAME, SHOP_LOCATION, SHOP_STATUS)
+		VALUES (#{shopNo}, #{shopName}, #{shopLocation}, #{shopStatus})
+	</insert>
 </mapper>
