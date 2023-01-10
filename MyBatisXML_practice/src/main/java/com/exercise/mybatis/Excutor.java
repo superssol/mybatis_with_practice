@@ -28,13 +28,14 @@ public class Excutor {
 		
 		try {
 			Shop shop = new Shop();
-			shop.setShopNo(100);
+			shop.setShopNo(3);
 //			shop.setShopName("test shop");
 //			shop.setShopLocation("boramae");
-			shop.setShopStatus("n");
+//			shop.setShopStatus("n");
 			
 //			sqlSession.insert("shopMapper.insert", shop);
-			sqlSession.update("shopMapper.update", shop);
+//			sqlSession.update("shopMapper.update", shop);
+			sqlSession.delete("shopMapper.delete", shop);
 			sqlSession.commit();
 		} catch (Exception e) {
 			e.printStackTrace();

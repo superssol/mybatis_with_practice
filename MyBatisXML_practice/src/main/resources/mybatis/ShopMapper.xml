@@ -19,4 +19,9 @@
 		SET SHOP_STATUS = #{shopStatus}
 		WHERE SHOP_NO = #{shopNo}
 	</update>
+	
+	<delete id="delete" parameterType="shop">
+		DELETE FROM NEW_MYBATIS
+		WHERE SHOP_NO = #{shopNo}
+	</delete>
 </mapper>
