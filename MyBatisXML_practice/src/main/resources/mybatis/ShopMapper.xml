@@ -10,7 +10,13 @@
 	</select>
 	
 	<insert id="insert" parameterType="shop">
-		INSERT INTO NEW_MYBATIS(SHOP_NO, SHOP_NAME, SHOP_LOCATION, SHOP_STATUS)
+		INSERT INTO NEW_MYBATIS(SHOP_NO, SHOP_NAME, SHOP_LOCATION, SHOP_STATUS) 
 		VALUES (#{shopNo}, #{shopName}, #{shopLocation}, #{shopStatus})
 	</insert>
+	
+	<update id="update" parameterType="shop">
+		UPDATE NEW_MYBATIS
+		SET SHOP_STATUS = #{shopStatus}
+		WHERE SHOP_NO = #{shopNo}
+	</update>
 </mapper>
